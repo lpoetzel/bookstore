@@ -15,7 +15,7 @@ const Header = () => {
         <Popup
           modal
           overlayStyle={{ background: "rgba(255,255,255,0.98" }}
-          closeOnDocumentClick={false}
+          closeOnDocumentClick={true}
           trigger={(open) => <BurgerMenuIcon open={open} />}
         >
           {(close) => <BurgerMenuList close={close} />}
