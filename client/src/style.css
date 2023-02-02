@@ -1,52 +1,70 @@
-.App {
-  height: 100vh;
-  padding: 0px 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.header {
   text-align: center;
 }
 
 .books {
   display: flex;
-  gap: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .book {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
+  min-width: 300px;
+  max-width: 23rem;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
 }
 
+.book img {
+  width: 80%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  height: fit-content;
+  background-color: antiquewhite;
+}
+
+.book h2 {
+  margin-top: 20px;
+}
+
+.book p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.book span {
+  display: block;
+  margin: 20px;
+  font-weight: bold;
+}
 .delete {
   border: none;
   padding: 3px 6px;
   background-color: white;
   cursor: pointer;
-  border: 1px solid rgb(245, 191, 191);
-  color: rgb(242, 100, 100);
+  border: 1px solid rgb(211, 17, 17);
+  color: rgb(211, 17, 17);
+  padding: 10px;
+  margin-right: 10px;
 }
 .update {
   border: none;
   padding: 3px 6px;
   background-color: white;
   cursor: pointer;
-  border: 1px solid rgb(204, 204, 243);
+  border: 1px solid rgb(139, 139, 234);
   color: rgb(139, 139, 234);
+  padding: 10px;
+  margin-left: 10px;
 }
-
-img {
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-  background-color: antiquewhite;
-}
-
 .form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 input {
   width: 250px;
@@ -56,9 +74,45 @@ input {
 
 .formButton {
   border: none;
+  width: 20%;
   padding: 10px;
   background-color: lightcoral;
   color: white;
   font-weight: bold;
   cursor: pointer;
+}
+header {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBar a {
+  text-decoration: none;
+}
+.navBar {
+  background-color: lightcoral;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-right: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.navBar ul {
+  list-style: none;
+  display: flex;
+  gap: 7rem;
+  text-decoration: none;
+}
+
+.navBar li {
+  color: black;
+}
+
+.navBar li:hover {
+  color: white;
+  transition: 0.7s;
 }
